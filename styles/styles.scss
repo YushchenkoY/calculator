@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+* {
+    box-sizing: border-box;
+}
+.calculator {
+    width: 300px;
+    height: auto;
+    margin: 50px auto 0;
+    text-align: center;
+    background-color: black;
+    border-radius: 4px;
+    font-family: 'Roboto';
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 20px;
+}
+
+.calculator__row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator__display {
+    outline: none;
+    border: none;
+    margin: 0 0 10px;
+    width: 100%;
+    text-align: right;
+    color: white;
+    background-color: black;
+
+}
+
+.calculator__btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    color: white;
+    background-color: rgb(51, 48, 48);
+}
+.calculator__btn:active{
+    background-color: rgb(114, 114, 114);
+}
+
+.calculator__btn--light{
+    background-color: rgb(189, 189, 189);
+    color: black
+}
+.calculator__btn--light:active{
+    background-color: rgb(255, 255, 255);
+}
+.calculator__btn--yellow{
+    background-color: rgb(255, 174, 0);
+}
+.calculator__btn--yellow:active{
+    color: rgb(255, 174, 0);
+    background-color: #fff;
+}
+
+.calculator__btn--long {
+    padding-left: 20px;
+    width: 120px;
+    border-radius: 60px;
+    text-align: left;
+}
+
